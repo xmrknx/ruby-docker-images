@@ -247,6 +247,7 @@ jobs:
       - run:
           name: "Login to <<parameters.registry_name>>"
           command: |
+            echo Test Test Test
             case x"<<parameters.registry_name>>" in
               xrubylang)
                 echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin
